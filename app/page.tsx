@@ -1,19 +1,31 @@
-import { Button } from "@/components/ui/button"
+import { Navbar } from "@/components/landing/navbar"
+import { HeroSection } from "@/components/landing/hero-section"
+import { QuickContactBar } from "@/components/landing/quick-contact-bar"
+import { ServicesSection } from "@/components/landing/services-section"
+import { PackagesSection } from "@/components/landing/packages-section"
+import { WhyChooseUsSection } from "@/components/landing/why-choose-us"
+import { WorkflowProcessSection } from "@/components/landing/workflow-process"
+import { ReviewsSection } from "@/components/landing/reviews-section"
+import { LocationContactSection } from "@/components/landing/location-contact-section"
+import { FAQSection } from "@/components/landing/faq-section"
+import { Footer } from "@/components/landing/footer"
+import { FloatingQuickActions } from "@/components/landing/floating-quick-actions"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <main className="min-h-screen bg-background text-foreground selection:bg-primary/20 selection:text-primary">
+      <Navbar />
+      <HeroSection />
+      <QuickContactBar />
+      <ServicesSection />
+      <PackagesSection />
+      <WhyChooseUsSection />
+      <WorkflowProcessSection />
+      <ReviewsSection />
+      <LocationContactSection />
+      <FAQSection />
+      <Footer />
+      <FloatingQuickActions />
+    </main>
   )
 }
