@@ -29,6 +29,7 @@ export function HeroSection() {
           alt="Motech Auto Care CDO Workshop"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-center opacity-25 filter contrast-125 saturate-50"
         />
         {/* Dark Vignettes & Carbon Gradients */}

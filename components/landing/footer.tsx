@@ -25,11 +25,12 @@ export function Footer() {
           {/* Col 1: Brand & Bio */}
           <div className="lg:col-span-4 space-y-4">
             <Link href="/" className="inline-block">
-              <div className="relative h-12 w-36">
+              <div className="relative h-24 w-72">
                 <Image
-                  src="/motech_without_bg.png"
+                  src="/motech_without_bg_backup.png"
                   alt="Motech Auto Care CDO"
                   fill
+                  sizes="288px"
                   className="object-contain"
                 />
               </div>

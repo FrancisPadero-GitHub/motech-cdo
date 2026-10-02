@@ -192,6 +192,7 @@ export function ServicesSection() {
                     src={service.image}
                     alt={service.title}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105 filter brightness-90 contrast-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/40 to-transparent" />

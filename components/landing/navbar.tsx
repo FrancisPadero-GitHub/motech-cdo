@@ -85,11 +85,12 @@ export function Navbar() {
         <div className="container mx-auto flex items-center justify-between px-4 sm:px-6">
           {/* Brand Logo & Telemetry Indicator */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative h-10 w-28 sm:w-32 transition-transform duration-200 group-hover:scale-105">
+            <div className="relative h-[72px] w-52 sm:w-64 transition-transform duration-200 group-hover:scale-105">
               <Image
-                src="/motech_without_bg.png"
+                src="/motech_without_bg_backup.png"
                 alt="Motech Auto Care CDO"
                 fill
+                sizes="(max-width: 640px) 208px, 256px"
                 className="object-contain"
                 priority
               />
